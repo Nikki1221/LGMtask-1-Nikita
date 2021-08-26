@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon Icon -->
+  <link rel="icon" href="images/favicon.jpg">
+  <title>Nikita_Agarwal</title>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+<script type="text/javascript">
+  let thumbnail = document.getElementsByClassName('thumbnail')
+
+  let activeImages = document.getElementsByClassName('active')
+
+  for (var i=0; i < thumbnail.length; i++){
+
+    thumbnail[i].addEventListener('mouseover', function(){
+    //console.log(activeImages)
+
+      document.getElementById('featured').src = this.src
+    })
+  }
+
+
+  let buttonRight = document.getElementById('slideRight');
+  let buttonLeft = document.getElementById('slideLeft');
+
+  buttonLeft.addEventListener('click', function(){
+    document.getElementById('slider').scrollLeft -= 80
+  })
+
+  buttonRight.addEventListener('click', function(){
+    document.getElementById('slider').scrollLeft += 80
+  })
+</script>
+<style>
+  #project{
+  padding-top: 1%;
+}
+#project h2{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+.project_card{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+.project_body1{
+  background-color:   #b3b3ff;
+  text-align: left;
+  padding: 8% 10%;
+}
+.project_body1 h5{
+  font-size: 1.5rem;
+  padding-top: 0rem;
+}
+.project_body2{
+  background-color: #b3b3ff;
+    text-align: left;
+    padding: 8% 10%;
+}
+.project_body2 h5{
+  font-size: 1.5rem;
+  padding-top: 0rem;
+}
+.project_body1:hover{
+  background-color: #ffff80;
+}
+.project_body2:hover{
+  background-color: #ffff80;
+}
+
+.project_title{
+  color:black;
+}
+.project_text{
+  color: #000000;
+}
+.projects_section_button{
+  background-color: white;
+  color:#303030;
+  font-size: 15px;
+  font-weight: 700;
+
+}
+.projects_section_button:hover{
+  background-color:  #990099;
+  color: white;
+
+}
+/* Team section */
+#team h2{
+  font-size: 2.5rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  text-align: center;
+}
+.team_data{
+  padding: 0 20%;
+  padding-top: 2%;
+}
+.team_card{
+  border: 0;
+  padding: 2%;
+}
+.member_section_div{
+margin:0 auto;
+background-color:#a366ff;
+height: 145px;
+width: 145px;
+border-radius: 100%;
+}
+.members_section_icon:hover{
+  cursor: pointer;
+  background-color: #000000;
+}
+
+.members_secton_image{
+  height: 140px;
+  width: 140px;
+position: relative;
+top:-26px;
+  border-radius: 100%;
+}
+.members_section_icon{
+  height: 25px;
+  padding: 2%;
+  width: auto;
+  position: relative;
+  top: 60px;
+
+}
+.members_secton_image:hover{
+  opacity: 0.3;
+}
+.member_section_div:hover .members_section_icon{
+  display: inline;
+  z-index: 999;
+}
+.members_section_heading{
+  font-size: 17px;
+  font-weight: 800;
+  font-family: Montserrat;
+}
+
+/* video section */
+
+.video-fluid {
+  width: 30%;
+  height: 50%;
+}
+
+/* NAVBAR */
+  body{
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+.first_section_background_color{
+  background-color: black;
+}
+
+.navbar-brand{
+  font-size: 2rem;
+  font-family: serif;
+  color: #f5f5f5;
+}
+.navbar-brand:hover{
+  color: #aaaaaa;
+}
+.nav-link{
+  font-family: Montserrat;
+  color:#f5f5f5;
+}
+.nav-link:hover{
+  color: #cc9900;
+}
+.navbar-toggler-icon{
+
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  opacity:0.7;
+}
+
+.custom-toggler,.navbar-toggler {
+    border-color: white;
+}
+.nav-link,.nav-item,.navbar{
+  z-index: 999;
+}
+.first_section_image{
+  min-height: 600px;
+  min-width: 1200;
+
+}
+
+.container-fluid{
+  padding: 0 25%;
+}
+.first_section_data{
+  padding: 0 25%;
+  text-align: left;
+  position: absolute;
+  top:14rem;
+}
+.infoText{
+  z-index: -1;
+  color: white;
+}
+
+h2{
+  font-family:  'Montserrat', sans-serif;
+    font-size: 2.4rem; 
+    line-height: 1.5; 
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+p{
+  font-family:  'Montserrat', sans-serif;
+
+    line-height: 1.4; /*Optional*/
+    font-weight: 400;
+}
+.first_section_button{
+  background-color: #75c2b6;
+  color: black;
+  font-weight: 700;
+}
+.first_section_button:hover{
+  background-color:  yellow;
+  color: rgb(0, 0, 0);
+}
+.first_section_button2{
+  background-color: yellow;
+  color: black;
+  font-weight: 700;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  
+}
+.first_section_button2:hover{
+  background-color: purple;
+  color: white;
+}
+
+.carousel-indicators [data-bs-target]{
+  height:6px;
+  width:7px;
+  border-radius: 100%;
+position: relative;
+right:365px;
+bottom:70px;
+}
+/* section2 */
+#second_part{
+  padding-top: 6%;
+}
+.second_part_data{
+padding: 0 25%;
+}
+.second_part_image{
+  height: 170px;
+  width: auto;
+  max-width: 100%;
+
+}
+.second_part_para{
+  color:#333333;
+  font-weight: 500;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding-bottom: 1%;
+}
+
+.second__section_div{
+  background-color: #8b189a;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.second__section_div_card_heading{
+  font-weight: 600;
+  padding: 10% 5%;
+  color: black;
+}
+.second__section_div_card_text{
+  padding: 0 10% 5% 10%;
+  color: #2f2f1e;
+  font-weight: 510;
+}
+
+/* pricing_section */
+
+#pricing{
+  background-color: white;
+}
+.grid{
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-left: 2.5rem;
+}
+.grid h3{
+  padding-top: 2rem;
+}
+.grid .text p{
+  color: brown;
+  font-weight: 600;
+}
+.grid > article{
+  background: rgb(255, 195, 77);
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform .3s;
+}
+.grid > article:hover{
+  transform: translateY(5px);
+  box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+.container .text{
+  padding: 0 20px 20px;
+}
+.text button{
+  background: #996600;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.text button:hover{
+  background: #ac7339;
+}
+
+
+/* blog section */
+.cards {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+.cards * {
+  box-sizing: border-box;
+}
+
+.card__image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+  border-left: 2px solid #000000;
+}
+
+.card__content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #fafafa;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+
+.card__content > p:first-of-type {
+  margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+  margin-bottom: 0;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.card__info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555555;
+  background: #eeeeee;
+  font-size: 0.8em;
+  border-bottom: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+
+.card__info i {
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+.card__info i:hover{
+  color: orangered;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.card__link {
+  color:  #990000;
+  text-decoration: none;
+}
+
+.card__link:hover {
+  text-decoration: underline;
+}
+
+/* contact section */
+
+#contact{
+  margin: 0;
+  background-color: #ffff66;
+  padding-bottom: 1%;
+}
+.contact_left{
+  padding: 1;  
+}
+.contact_right{
+  text-align: left;
+  margin: 0;
+}
+.contact_heading{
+  padding: 0% 0 1% 2%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contact_form{
+  padding-left: 1%;
+  width: 450px;
+}
+.contact_section_label{
+  font-size: 12px;
+  font-weight: bold !important;
+}
+.contact_section_button{
+  width: 441px;
+  background-color:purple;
+  color: white;
+  font-weight: bold;
+}
+.contact_section_button:hover{
+  background-color:#4d4d00;
+  color: white;
+}
+/* newsletter */
+
+#newsletter{
+  margin: 0;
+  background-image:url("n2.jpeg");
+  height: 300px;
+  padding-bottom: 1%;
+}
+.newsletter_heading{
+  padding-top:2%;
+  padding-bottom: 2%;
+  color: black;
+}
+
+.newsletter_form{
+  width: 55%;
+  margin: 0 auto;
+
+}
+.newsletter_button{
+  background-color:#ffffffb4;
+  color: #000000;
+  font-weight: 900;
+  font-family: sans-serif;
+  width: 24%;
+  text-align: center;
+  font-weight: bold;
+
+}
+.newsletter_button:hover{
+  background-color: #ff6666;
+  color: white;
+}
+
+/* life in zippy */
+
+#life_in_zippy{
+  background-color: #d9d9d9;
+  padding-bottom: 2%;
+}
+
+.life_heading{
+  padding-top:2%;
+  padding-bottom: 1%;
+}
+
+#featured{
+  max-width:100%;
+  max-height: 550px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.thumbnail{
+  object-fit: cover;
+  max-width: 130px;
+  max-height: 700px;
+  cursor: pointer;
+  opacity: 0.7;
+  margin: 5px;
+}
+
+.thumbnail:hover{
+  opacity:1;
+  transform: scale(2);
+}
+
+#slide-wrapper{
+  max-width: 900px;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  min-height: 200px;
+  align-items: center;
+}
+
+#slider{
+  width: 600rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+}
+#slider::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow{
+  width: 30px;
+  height: 80px;
+  cursor: pointer;
+  transition: .3s;
+  background-color: white;
+}
+
+
+</style>
+
+</head>
+
+
+<body  style="margin: 0; text-align: center; font-family: sans-serif;">
+
+<div class="" id="first_section">
+<div class="first_section_background_color">
+
+
+    <!-- Navigation Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#" style="text-indent: 50px; color: black;">ZIPPY</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+<li class="nav-item active">
+          <a class="nav-link" href="#" style="text-indent: 550px; color: black;">Home</a>
+        </li>
+<li class="nav-item">
+          <a class="nav-link" href="#" style="color: black;">Projects</a>
+        </li>
+<li class="nav-item">
+          <a class="nav-link" href="#"  style="color: black;">Pricing</a>
+        </li>
+<li class="nav-item">
+          <a class="nav-link" href="#"  style="color: black;">Team</a>
+        </li>
+<li class="nav-item">
+          <a class="nav-link" href="#"  style="color: black;">Blog</a>
+        </li>
+<li class="nav-item">
+          <a class="nav-link" href="#"  style="color: black;">Contact</a>
+        </li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</div>
+
+
+    <!-- navbar ends -->
+
+    <!-- carousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="carousel_first_section_buttons button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="carousel_first_section_buttons button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="carousel_first_section_buttons button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="carousel_first_section_buttons button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="1.jpg" class="first_section_image d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="2.jpg" class="first_section_image d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="3.jpg" class="first_section_image d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="4.jpg" class="first_section_image d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- carousel_ends -->
+
+    <div class="first_section_data">
+
+
+      <div class="row">
+
+        <div class="col-lg-9 ">
+          <div class="infoText">
+            <h2>One page promising to fill all your needs!</h2>
+            <p></p>
+            <p style="font-size: 1.2rem; font-weight: 500;">Welcome to the Zippy Travelling here. 
+              It is one of its kind website designed to fulfill all the needs of user. </p>
+            <p></p>
+
+            <p></p>
+            <a href="#"> <button class="first_section_button2 btn btn-lg btn-block" type="button" name="button"> Learn More </button></a>
+            <a href="#"> <button class="first_section_button2 btn btn-lg  btn-block" type="button" name="button"> Try It </button></a>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+</div>
+  </div>
+  <!-- first section ends -->
+
+  <div class="" id="second_part">
+
+    <h2>Welcome to Zippy Travelling</h2>
+    <div class="heading-underline"></div>
+
+    <br><br>
+    <div class="second_part_data">
+
+      <div class="row">
+
+        <div class="col-lg-8 col-md-8">
+          <p class="second_part_para">This is single page website created as part of my Web Development Internship at LetsGrowMore. 
+            This travelling Website is designed to fulfill every purpose.</p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <img src="w1.jpg" alt="page_img" class="second_part_image">
+        </div>
+
+      </div>
+      <br>
+      
+      <!-- Three Columns -->
+
+      <div class="row">
+
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="card border-light mb-3">
+
+            <div class="second_section_card card-body">
+              <div class="second__section_div">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16" style="padding-top: 20px;">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+</svg>
+              </div>
+              <h5 class="second__section_div_card_heading card-title">Travelling Blog</h5>
+              <p class="second__section_div_card_text card-text">
+                This is all good for beginners but when these blogs grow,
+                 most bloggers forgot about design and instead doubled down on SEO and marketing.</p>
+              <a href="#"> <button class="first_section_button btn btn-sm btn-block" type="button" name="button"> LEARN MORE </button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="card border-light mb-3">
+
+            <div class="second_section_card card-body">
+              <div class="second__section_div">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16" style="padding-top: 20px;">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+</svg>
+              </div>
+              <h5 class="second__section_div_card_heading card-title">E-mail</h5>
+              <p class="second__section_div_card_text card-text">Client can also send us a query, zippy is always there to help the client and provides solution.</p>
+              <a href="#"> <button class="first_section_button btn btn-sm btn-block" type="button" name="button"> LEARN MORE </button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="card border-light mb-3">
+
+            <div class="second_section_card card-body">
+              <div class="second__section_div">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-calculator-fill" viewBox="0 0 16 16"  style="padding-top: 20px;">
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5zm0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-1z"/>
+</svg>
+              </div>
+              <h5 class="second__section_div_card_heading card-title">Circuit-Board</h5>
+              <p class="second__section_div_card_text card-text">Our team povides awesome travelling ideas and whole plan of travelling with
+                 team
+                . It provides latest blogs and latest information to meet the needs of its users.</p>
+              <a href="#"> <button class="first_section_button btn btn-sm btn-block" type="button" name="button"> LEARN MORE </button></a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Three Columns end-->
+      <hr style="height:2.5px;border-width:0;color:rgb(98, 98, 99);background-color:rgb(98, 98, 99)">
+    </div>
+  </div>
+
+
+  <!-- Projects section -->
+  <div id="project" style="background-color:white;">
+
+  <h2>Projects</h2>
+  <div class="row">
+
+    <div class="col-lg-3 col-md-3 col-sm-3" style="padding:2% 0;">
+      <div class="project_card">
+        <img src="p1.jpg" class="card-img-top" alt="...">
+        <div class="project_body1 card-body">
+          <h5 class="project_title card-title"><b>Manali Trip</b> </h5>
+          <p class="project_text card-text">Manali is a high-altitude Himalayan resort town in India’s 
+            northern Himachal Pradesh state. It has a reputation as a backpacking center. </p>
+          <a href="#" class="projects_section_button btn btn-lg btn-block">Know More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 " style="padding:2% 0;">
+      <div class="project_card">
+        <img src="p2.jpg" class="card-img-top" alt="...">
+        <div class="project_body2 card-body">
+          <h5 class="project_title card-title"><b>Goa</b> </h5>
+          <p class="project_text card-text">Goa is a state in western India with coastlines stretching along the Arabian Sea. Its 
+            long history as a Portuguese colony prior to 1961. </p>
+          <a href="#" class="projects_section_button btn btn-lg  btn-block">Know More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3" style="padding:2% 0;">
+      <div class="project_card">
+        <img src="p3.jpg" class="card-img-top" alt="...">
+        <div class="project_body1 card-body">
+          <h5 class="project_title card-title"><b>Odisha</b> </h5>
+          <p class="project_text card-text">Odisha (formerly Orissa), an eastern Indian state on the Bay of Bengal, is known for its tribal cultures and its many ancient Hindu temples</p>
+          <a href="#" class="projects_section_button btn btn-lg btn-block">Know More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3" style="padding:2% 0;">
+      <div class="project_card">
+        <img src="p4.jpg" class="card-img-top" alt="...">
+        <div class="project_body2 card-body">
+          <h5 class="project_title card-title"><b>Tamil Nadu</b> </h5>
+          <p class="project_text card-text">Tamil Nadu, a South Indian state, is famed for its Dravidian-style Hindu temples.
+            In Madurai, Meenakshi Amman Temple has high ‘gopuram’ </p>
+          <a href="#" class="projects_section_button btn btn-lg btn-block">Know More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Project ends -->
+
+ <!-- Pricing section -->
+
+  <div class="pricing" id="pricing">
+    <br>
+    <h2 style="  font-weight: bold; font-size: 2.5rem;">Packages</h2>
+
+    <div class="container">
+      <main class="grid">
+        <article>
+          <div class="text">
+            <h3><b><i>Goa</i></b></h3>
+            <p>Rs 15000</p>
+            <p style="color: black; font-weight: 500;">4 night and 5 days<br>Journey will be start from delhi<br>and end also in delhi</p>
+            <button>BUY</button>
+          </div>
+        </article>
+        <article>
+          <div class="text">
+            <h3><b><i>Shimla</i></b></h3>
+            <p>Rs 20000</p>
+            <p style="color: black; font-weight: 500;">5 night  and 6 days<br>Journey will be start from jaipur<br>and end in delhi</p>
+            <button>BUY</button>
+          </div>
+        </article>
+        <article>
+          <div class="text">
+            <h3><b><i>Manali+ Shimla</i></b></h3>
+            <p>Rs 21000</p>
+            <p style="color: black; font-weight: 500;">5 night and 6 days<br>Journey will be start from mumbai<br>and end in puna</p>
+            <button>BUY</button>
+          </div>
+        </article>
+      </main>
+    </div>
+
+
+  </div>
+
+
+  <!-- Pricing section ends -->
+
+
+  <!-- Video projects section -->
+  <h2 style="font-weight: bold; font-size:2.5rem; padding: 2%;">Travelling Video</h2>
+  <video class="video-fluid z-depth-1" autoplay loop controls muted>
+    <source src="Pexels Videos 2711092.mp4" type="video/mp4" />
+  </video>
+  <video class="video-fluid z-depth-1" autoplay loop controls muted>
+    <source src="production ID_5126105.mp4" type="video/mp4" />
+    
+  </video>
+  <video class="video-fluid z-depth-1" autoplay loop controls muted>
+    <source src="video (1).mp4" type="video/mp4" />
+  </video>
+  
+  <!-- Video projects section ends -->
+
+
+  <!-- Team section -->
+  <br><br>
+  <div class="" id="team">
+    <h2>Team Members</h2>
+    <div class="team_data">
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="team_card card">
+            <div class="member_section_div">
+              <img class="members_section_icon" src="f1.png" alt="">
+              <img class="members_section_icon" src="f2.jpg" alt="">
+              <img class="members_section_icon" src="f3.png" alt="">
+              <img class="members_secton_image" src="t4.jpg" alt="">
+
+            </div>
+
+            <div class="card-body">
+              <h5 class="members_section_heading card-title">Alexa</h5>
+              <p class="card-text"><small class="text-muted">Head</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="team_card card">
+            <div class="member_section_div">
+              <img class="members_section_icon" src="f1.png" alt="">
+              <img class="members_section_icon" src="f2.jpg" alt="">
+              <img class="members_section_icon" src="f3.png" alt="">
+              <img class="members_secton_image" src="t5.jpg" alt="">
+
+            </div>
+
+            <div class="card-body">
+              <h5 class="members_section_heading card-title">Johan</h5>
+              <p class="card-text"><small class="text-muted">Guide</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="team_card card">
+            <div class="member_section_div">
+              <img class="members_section_icon" src="f1.png" alt="">
+              <img class="members_section_icon" src="f2.jpg" alt="">
+              <img class="members_section_icon" src="f3.png" alt="">
+              <img class="members_secton_image" src="t1.jpg" alt="">
+
+            </div>
+
+            <div class="card-body">
+              <h5 class="members_section_heading card-title">sam</h5>
+              <p class="card-text"><small class="text-muted">Video Designer</small></p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="team_card card">
+            <div class="member_section_div">
+              <img class="members_section_icon" src="f1.png" alt="">
+              <img class="members_section_icon" src="f2.jpg" alt="">
+              <img class="members_section_icon" src="f3.png" alt="">
+              <img class="members_secton_image" src="t2.jpg" alt="">
+
+            </div>
+
+            <div class="card-body">
+              <h5 class="members_section_heading card-title">owna</h5>
+              <p class="card-text"><small class="text-muted">Manger</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="team_card card">
+            <div class="member_section_div">
+              <img class="members_section_icon" src="f1.png" alt="">
+              <img class="members_section_icon" src="f2.jpg" alt="">
+              <img class="members_section_icon" src="f3.png" alt="">
+              <img class="members_secton_image" src="t3.jpg" alt="">
+
+            </div>
+
+            <div class="card-body">
+              <h5 class="members_section_heading card-title">Derek</h5>
+              <p class="card-text"><small class="text-muted">Travelling Arrangement</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="team_card card">
+            <div class="member_section_div">
+              <img class="members_section_icon" src="f1.png" alt="">
+              <img class="members_section_icon" src="f2.jpg" alt="">
+              <img class="members_section_icon" src="f3.png" alt="">
+              <img class="members_secton_image" src="t6.jpg" alt="">
+
+            </div>
+
+            <div class="card-body">
+              <h5 class="members_section_heading card-title">Deo</h5>
+              <p class="card-text"><small class="text-muted">Manger</small></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <br><br>
+  <!-- Team section ends -->
+
+    <!-- Life in Zippy -->
+  <div class="" id="life_in_zippy">
+
+    <h2 class="life_heading">Life of Traveller</h2>    
+    <img id=featured style= "height: 30rem;" src="l12.jpg">
+    <br>
+
+    <div id="slide-wrapper">
+      <img id="slideLeft" class="arrow" src="leftarrow.jpg">
+
+      <div id="slider">
+        <img class="thumbnail active" src="l19.jpg">
+        <img class="thumbnail" style="width: 4rem" src="l10.jpg">
+        <img class="thumbnail" src="l1.jpg">
+
+        <img class="thumbnail" src="l11.jpg">
+        <img class="thumbnail" src="l2.jpg">
+        <img class="thumbnail" src="l3.jpg">
+        <img class="thumbnail" src="l4.jpg">
+        <img class="thumbnail" src="l5.jpg">
+        <img class="thumbnail" src="l6.jpg">
+        <img class="thumbnail" src="l7.jpg">
+        <img class="thumbnail" src="l8.jpg">
+      </div>
+
+      <img id="slideRight" class="arrow" src="rightallow.png">
+    </div>
+
+    <br>
+
+  </div>
+
+<script>  //javaScript File for Life in Zippy Section//
+
+let thumbnail = document.getElementsByClassName('thumbnail')
+
+let activeImages = document.getElementsByClassName('active')
+
+for (var i=0; i < thumbnail.length; i++){
+
+  thumbnail[i].addEventListener('mouseover', function(){
+    //console.log(activeImages)
+
+    document.getElementById('featured').src = this.src
+  })
+}
+
+
+let buttonRight = document.getElementById('slideRight');
+let buttonLeft = document.getElementById('slideLeft');
+
+buttonLeft.addEventListener('click', function(){
+  document.getElementById('slider').scrollLeft -= 80
+})
+
+buttonRight.addEventListener('click', function(){
+  document.getElementById('slider').scrollLeft += 80
+})
+</script>
+  <!-- Life in Zippy ends -->
+
+  <!-- newsletter section -->
+
+<div class="" id="newsletter">
+  <div class="image-section">
+    <div>
+      <h2 class="newsletter_heading">Newsletter Signup</h2>
+<form >
+<div class="newsletter_form input-group input-group-lg">
+
+  <input type="email" class="newsletter_form form-control" id="exampleInputEmail" placeholder="trveller@google.com" aria-describedby="emailHelp">
+    <button class="newsletter_button btn btn-outline-dark"type="button" name="button"><small> <small>Sign Up</small></small> </button>
+
+
+</div>
+</form>
+    </div>
+</div></div>
+<!-- newsletter section ends-->
+
+<!-- blog section -->
+<br>
+<div class="" id="blog">
+  <h2>Blog</h2>
+  <div class="heading-underline"></div>
+  
+  <div class="cards">
+    <div class="card">
+      <img class="card__image" src="b1.jpg" alt="_oops_">
+      <div class="card__content">
+        <p>
+          Mridula Dwivedi has been writing on her blog Travel Tales from India for almost 12 years now.
+          It began with just articles about travel in India,
+ but as she has expanded her horizon since she gave up her academic career and decided to focus solely on writing,
+  her blog now covers articles from her personal travels outwith India. Which is just as well, as we need her wisdom.
+        </p>
+      </div>
+      <div class="card__info">
+        <div>
+          <a href="./" class="card__link">Read More</a>
+        </div>
+        <div>
+          <i class="fas fa-heart"><br>509</i>
+        </div>        
+      </div>
+    </div>
+    <div class="card">
+      <img class="card__image" src="b2.jpg" alt="_oops_">
+      <div class="card__content">
+        <p>
+          Prasad Np has been dedicated to writing about India from the perspective of both his family 
+          – in comfort and style – and as a sole voyager in a more backpacking, fly-by-the-seat-of-his-pants approach
+          . Brimming with India travel tips and dos and don’ts, you can search the blog by specific destination (or state),
+           which is highly useful if you are wishing to go in-depth during your India travels.
+        </p>
+      </div>
+      <div class="card__info">
+        <div>
+          <a href="./" class="card__link">Read More</a>
+        </div>
+        <div>
+          <i class="fas fa-heart"><br>453</i>
+        </div>        
+      </div>
+    </div>
+    <div class="card">
+      <img class="card__image" src="b3.jpg" alt="_oops_">
+      <div class="card__content">
+        <p>
+          This well-designed and nicely-compiled blog by travelling guru Dheeraj Sharma is 
+          dedicated to the beauty of the high and mighty Himalayas of India. Given how gently he writes about the grace of snow-capped
+           peaks and valleys, you might be surprised to find that Sharma’s dayjob is in software! 
+        </p>
+      </div>
+      <div class="card__info">
+        <div>
+          <a href="./" class="card__link">Read More</a>
+        </div>
+        <div>
+          <i class="fas fa-heart"><br>810</i>
+        </div>        
+      </div>
+    </div>
+    <div class="card">
+      <img class="card__image" src="b4.jpg" alt="_oops_">
+      <div class="card__content">
+        <p>
+          Desi girl Indrani Ghose has been blogging for almost ten years. 
+          In that time she’s been capturing the heart of India with an array of photography, particularly stunning portraits and faces of India.
+           Proudly patriotic, no stone is left untouched, whether it is a review of the latest Indian automobile,
+           ghostly tales in haunted Indian palaces, or delicious destination dining
+        </p>
+      </div>
+      <div class="card__info">
+        <div>
+          <a href="./" class="card__link">Read More</a>
+        </div>
+        <div>
+          <i class="fas fa-heart"><br>399</i>
+        </div>        
+      </div>
+    </div>  
+    <br><br>
+  </div>
+
+<!-- blog section ends -->
+
+<!-- contact section -->
+<div class="" id="contact">
+<br><br>
+<div class="row">
+  <div class="contact_left col-lg-6 col-md-6 col-sm-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83922961552!2d77.06889658335612!3d28.52758200726285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1625944009389!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="contact_right col-lg-6 col-md-6 col-sm-6">
+<h2 class="contact_heading">Contact</h2>
+<form class="contact_form">
+  <div class="mb-3">
+    <label class="contact_section_label form-label">NAME</label>
+    <input type="text" class="form-control">
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail" class="contact_section_label form-label">EMAIL ADDRESS</label>
+    <input type="email" class="form-control">
+
+  </div>
+  <div class="mb-3">
+    <label class="contact_section_label form-label">SUBJECT</label>
+    <input type="text" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label class="form-label contact_section_label">MESSAGE</label>
+    <textarea class="form-control"style="height: 150px"></textarea>
+  </div>
+
+  <button type="submit" class="contact_section_button btn btn-sm btn-block">SEND</button>
+</form>
+  </div>
+
+</div>
+<br>
+</div>
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<section class="footer" style="background: white;">
+
+  <div class="box-container" style="display: flex; gap:1rem; flex-wrap: wrap;">
+           
+      <div class="box" style="padding:1rem 0; flex:1 1 25rem;">
+          <h3 style="font-weight: bold; font-size: 1.2rem; color: black; padding-top: 1.2rem;">Office Address</h3>
+          <div class="text" style="color: black; padding-top: 0.5rem;">
+              <p>traveller agency ,123<br>abc,Delhi <br>Adipsching</p>
+          </div>
+      </div>
+
+      <div class="box" style="padding:1rem 0; flex:1 1 25rem;">
+          <h3  style="font-weight: bold;  font-size: 1.2rem; color: black; padding-top: 1.2rem;">Follow Us</h4>
+          <div class="share" style="font-size: 2.9rem;">
+              <a href="https://www.facebook.com/"><i style="color: black;  font-size: 25px;" class="fab fa-facebook-square"></i></a>
+              <a href="https://twitter.com/login"><i style="color: black;  font-size: 25px;" class="fab fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/"><i style="color: black;  font-size: 25px;" class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/"><i style="color: black;  font-size: 25px;" class="fab fa-linkedin"></i></a>
+          </div>
+      </div>
+
+      <div class="box" style="padding:1rem 0; flex:1 1 25rem;">
+          <h3  style="font-weight: bold;  font-size: 1.2rem; color: black; padding-top: 1.2rem;">Contact Us</h3>
+          <div class="text" style="color: black; padding-top: 0.5rem;">
+            <p>+123 456 789<br>traveller@skype<br>enquiry@travelling.com</p>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+<!-- footer section ends -->
+
+
+  <script src="script.js" charset="utf-8"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
